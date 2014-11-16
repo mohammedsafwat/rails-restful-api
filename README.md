@@ -5,7 +5,7 @@
 Make sure you have Ruby installed.
 
 ```sh
-$ git clone git@github.com:heroku/rails-restful-api.git
+$ git clone https://github.com/mohammedsafwat/rails-restful-api.git
 $ cd rails-restful-api
 $ bundle install
 $ rake db:create db:migrate
