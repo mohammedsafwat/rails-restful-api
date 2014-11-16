@@ -18,23 +18,22 @@ $ foreman start web
 
 Your app should now be running on [localhost:5000](http://localhost:5000/).
 
-## Deploying to Heroku
-
+Models
 ```sh
-$ heroku create
-$ git push heroku master
-$ heroku run rake db:migrate
-$ heroku open
+User :name, :email, :country
+Building :name, :description, :longitude, :latitude
 ```
 
-## Documentation
+Views
 
-For more information about using Ruby on Heroku, see these Dev Center articles:
+views/buildings & views/users contain a index and show
 
-- [Ruby on Heroku](https://devcenter.heroku.com/categories/ruby)
+Controllers
 
-=======
-rails-restful-api
-=================
+controllers/api/base_controller contains the most logic, see private method comments. These will set and get the resource names as needed for each controller.
 
-This is a simple Rails rest-api that has two models: User and Building.
+Kaminari Pagination
+
+Kaminari has a default page size of 25, to override this pass in a page and/or a page_size paramater like the following:
+
+http://api.rest-api.dev/v1/dreams.json?page=1&page_size=10
