@@ -1,12 +1,12 @@
-# ruby-restful-api
+# rails-restful-api
 
 ## Running Locally
 
-Make sure you have Ruby installed.  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
+Make sure you have Ruby installed.
 
 ```sh
-$ git clone git@github.com:heroku/ruby-getting-started.git
-$ cd ruby-getting-started
+$ git clone git@github.com:heroku/rails-restful-api.git
+$ cd rails-restful-api
 $ bundle install
 $ rake db:create db:migrate
 $ foreman start web
